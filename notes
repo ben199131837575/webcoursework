@@ -1,0 +1,64 @@
+
+Blade notes:
+
+> helps prevent XSS attacks
+
+
+{!! !!} <------- stops data from being escaped
+
+{{ <tag> blob </tag>}}  <---- will escape the html stuff
+
+
+Security:
+SQL <---------  pdo methods ->> prepare/bindParam()
+html <---------- blade gots us for this
+hash passwords <--------- hash(); md5()
+validation <------ isset(); empty(); is_interger()/intval()
+
+username limits = /^[a-z0-9_\-]{3, 16}$/
+  > "^" = begginig of line
+  > "$" = end of line
+
+REGEX!!! for php:
+preg_match(regex, string)
+  returns TRUE if string matches  regex
+
+preg_replace(regex, replacement,  string)
+  returns a new string with all substrings that match regex replaced
+  by replacement
+
+preg_split(regex, string)
+  returns an array of strings from given string broken apart using the
+  given regex as the delimiter (similar to explode but more powerful)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//
